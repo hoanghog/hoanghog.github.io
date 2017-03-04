@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>My WebPage</title>
+    <link href="css/common.css" rel="stylesheet">
 </head>
 <body>
 
@@ -10,7 +11,11 @@
 		<h1>New Header</h1>
 		{% include nav.html %}
 	</header>
+
 	{{content}}
 
+    <footer>
+        {% include nav.html %}
+    </footer>
 </body>
 </html>
