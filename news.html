@@ -3,3 +3,12 @@ layout: default
 ---
 <h1> NEWS</h1>
 <img src="ok.gif">
+
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="">{{post.title}}</a>
+        <p>{{post.meta}}</p>
+    </li>
+    {% endfor %}
+</ul> 
