@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+            <h1 class="lead">
+                Autor
+            </h1>
+            <img src="imgs/me.png" class="portrait">
+            <p class="about">Martin Hoang</p>
+            <p class="about">Studentt </p>
+            <p class="about">Informatika</p>
+            <p class="about">12.06.1995</p>
+            <a href="https://www.facebook.com/martin.hog" target="_blank"><img src="imgs/icons/facebook.png" class="icons"></a>
+            <a href="https://twitter.com/HoangHog" target="_blank"><img src="imgs/icons/twitter.png" class="icons"></a>
+            <a href="https://github.com/hoanghog" target="_blank"><img src="imgs/icons/github.png" class="icons"></a>
+
+            <p class="sidebar-p">Webova stranka vytvorena na predmet <a href="https://wiki.fiit.stuba.sk/study/bc/info/wp/2016-17/" target="_blank">Webove publikacie</a> pomocou nastroja <a href="http://jekyllrb.com" target="_blank">Jekkyl</a>.</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a class="sidebar-nav-item" href="/">Domov</a>
+            <a class="sidebar-nav-item" href="/about/">O mne</a>
+            <a class="{% if page.url contains 'blog.html' %}sidebar-nav-item-active{% else %}sidebar-nav-item{% endif %}" href="blog.html">Blog</a>
+            <a class="sidebar-nav-item" href="https://github.com/poole/hyde/archive/v2.1.0.zip">WebPub</a>
+            <span class="sidebar-nav-ver">Alfa 1.0 &copy; 2017</span>
+        </nav>
+
+    </div>
+</div>
+<div class="content container">
+
+    <div class="posts">
+
+        {{ content }}
+
+    </div>
+</div>

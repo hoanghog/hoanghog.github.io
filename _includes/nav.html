@@ -1,6 +1,17 @@
+
 <nav>
-    <ul class="nav  {{include.navclass}}">
-        <li><a href="index.html" class="{% if page.url contains 'Home' %}current{% endif %}">Home</a></li>
-        <li><a href="news.html" class="{% if page.url contains 'news' or contains 'old' %}current{% endif %}">News</a></li>
+    <ul class="nav">
+        <li>
+            <a href="index.html" class="{% if page.url == '/' %}current{% endif %}">Domov</a>
+        </li>
+        <li>
+            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Blog</a>
+        </li>
+        <li>
+            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">O mne</a>
+        </li>
+        <li>
+            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Webove publikacie</a>
+        </li>
     </ul>
 </nav>
