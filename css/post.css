@@ -5,12 +5,16 @@
  * with a 25%-wide `.sidebar`.
  */
 
-.content {
+.blog {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    margin-left: 18rem;
-    margin-right: 2rem;
-    max-width: 38rem;
+    margin-left: 19%;
+    margin-right: 10%;
+    max-width: 30rem;
+}
+
+.blog h1{
+    text-align: center;
 }
 
 /*
@@ -20,7 +24,7 @@
  */
 
 .container {
-    max-width: 55rem;
+    max-width: 35rem;
     padding-left: 1rem;
     padding-right: 1rem;
     /*margin-left:  auto;

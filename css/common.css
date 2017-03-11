@@ -29,7 +29,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
-    padding-top: 13%;
+    padding-top: 11%;
 }
 
 .welcome-box-content {
@@ -98,7 +98,3 @@ header {
     line-height: 0;
 }
 
-a.nav:hover,
-a.nav:focus {
-    
-}
