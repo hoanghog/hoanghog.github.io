@@ -8,10 +8,24 @@
         <link href="css/post.css" rel="stylesheet">
         
     </head>
-    <body>
+    <body class="background">
+        <div class="welcome-box">
+            <div class="welcome-box-content">
+                <h1>
+                    Welcome
+                </h1>
+                <p>
+                    Welcome to my <strong>first</strong> webpage. It's made for subject <strong>web publications</strong>, and it's primaly made for <strong>bloging</strong>. Hope you will enjoy it.
+</p>
+                <a href="blog.html" class="welcome-box-button">
+                    Enter blog
+                </a>
+            </div>
+        </div>
         <header>
             {% include nav.html %}
         </header>
+
 
         {{content}}
 
