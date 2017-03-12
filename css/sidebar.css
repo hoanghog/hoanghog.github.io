@@ -1,6 +1,5 @@
 html {
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.5;
 }
 
 .about {
@@ -15,9 +14,6 @@ html {
     padding: 0px 4px;
 }
 
-/*
-    Sidebar
-*/
 .sidebar {
     text-align: center;
     padding: 2rem 1rem;
@@ -38,6 +34,7 @@ html {
 
 .sidebar a {
     color: #fff;
+    text-decoration: none;
 }
 
 .sidebar-about h1 {
@@ -47,7 +44,6 @@ html {
     font-size: 3.25rem;
 }
 
-/* Sidebar nav */
 .sidebar-nav {
     margin-bottom: 1rem;
     position: fixed;
@@ -75,12 +71,6 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item-active {
     font-weight: bold;
 }
-
-/*
-    Portrait
-
-    Author portrait
-*/
 
 .portrait {
     margin-left: auto;

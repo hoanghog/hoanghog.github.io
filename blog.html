@@ -1,13 +1,23 @@
 ---
-layout: wabalaba
+layout: default
 ---
-<h1>
-    Blog
-</h1>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-    </li>
-    {% endfor %}
-</ul>
+<div class="blog">
+    <h1>
+        Blog
+    </h1>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h6 class="date">
+                {{ post.date | date: '%B %d. %Y' }}
+            </h6>
+            <h2>
+                <a href="{{ post.url }}" class="links">{{ post.title }}</a>
+            </h2>
+            <p class="meta">
+                {{ post.meta }}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

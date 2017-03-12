@@ -1,2 +1,7 @@
 exclude: ['README.md'] 
 encoding: utf-8
+gems:
+  - jemoji
+
+baseurl: 
+

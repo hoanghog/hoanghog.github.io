@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        {% include root.html %}
         <title>Martin Hoang</title>
-        <link href="css/common.css" rel="stylesheet">
-        <link href="css/sidebar.css" rel="stylesheet">
-        <link href="css/post.css" rel="stylesheet">
-        
+        <link href="{{ root }}/css/common.css" rel="stylesheet">
+        <link href="{{ root }}/css/sidebar.css" rel="stylesheet">
+        <link href="{{ root }}/css/post.css" rel="stylesheet">
     </head>
-    <body class="background">
+    <body class="background" background="{{ root }}/imgs/background.jpg" >
         
-        <header>
+        <header >
             {% include nav.html %}
         </header>
 

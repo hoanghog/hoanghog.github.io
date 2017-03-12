@@ -1,17 +1,17 @@
 
-<nav>
-    <ul class="nav">
+<nav class="nav">
+    <ul >
         <li>
-            <a href="index.html" class="{% if page.url == '/' %}current{% endif %}">Home</a>
+            <a href="{{ root }}/index.html" class="{% if page.url == '/' %}current{% endif %}">Home</a>
         </li>
         <li>
-            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Blog</a>
+            <a href="{{ root }}/blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Blog</a>
         </li>
         <li>
-            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">About me</a>
+            <a href="{{ root }}/blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">About me</a>
         </li>
         <li>
-            <a href="blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Web publications</a>
+            <a href="{{ root }}/blog.html" class="{% if page.url contains '/blog.html' %}current{% endif %}">Web publications</a>
         </li>
     </ul>
 </nav>
