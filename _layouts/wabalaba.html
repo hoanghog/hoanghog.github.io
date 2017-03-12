@@ -1,7 +1,7 @@
 ---
 layout: default
+webname: Blog-post
 ---
-
 <div class="sidebar">
     <div class="container sidebar-sticky">
         <div class="sidebar-about">
@@ -13,29 +13,20 @@ layout: default
             <p class="about">Student</p>
             <p class="about">Informatics</p>
             <p class="about">12.06.1995</p>
-            <a href="https://www.facebook.com/martin.hog" target="_blank"><img src="{{ root }}/imgs/icons/facebook.png" class="icons"></a>
-            <a href="https://twitter.com/HoangHog" target="_blank"><img src="{{ root }}/imgs/icons/twitter.png" class="icons"></a>
-            <a href="https://github.com/hoanghog" target="_blank"><img src="{{ root }}/imgs/icons/github.png" class="icons"></a>
-
+            <a href="{{ site.facebook }}" target="_blank"><img src="{{ root }}/imgs/icons/facebook.png" class="icons"></a>
+            <a href="{{ site.twitter }}" target="_blank"><img src="{{ root }}/imgs/icons/twitter.png" class="icons"></a>
+            <a href="{{ site.github }}" target="_blank"><img src="{{ root }}/imgs/icons/github.png" class="icons"></a>
             <p class="sidebar-p">I'm student at<a href="http://www.fiit.stuba.sk/" target="_blank"> faculty of informatics</a> at Bratislava. I like computer science, sport and hanging out with friends. This page using <a href="http://jekyllrb.com" target="_blank">Jekkyl</a>.</p>
         </div>
-
         <nav class="sidebar-nav">
             <a class="sidebar-nav-item" href="{{ root }}/">Home</a>
-            <a class="{% if page.url contains 'blog.html' %}sidebar-nav-item-active{% else %}sidebar-nav-item{% endif %}" href="blog.html">Blog</a>
-            <a class="sidebar-nav-item" href="/about/">About me</a>
-            <a class="sidebar-nav-item" href="">WebPub</a>
+            <a class="{% if page.url contains '{{ root }}/blog.html' %}sidebar-nav-item-active{% else %}sidebar-nav-item{% endif %}" href="blog.html">Blog</a>
+            <a class="sidebar-nav-item" href="{{ root }}/aboutme.html">About me</a>
+            <a class="sidebar-nav-item" href="{{ root }}/webpub.html">WebPub</a>
             <span class="sidebar-nav-ver">Alfa 1.0 &copy; 2017</span>
         </nav>
-
     </div>
 </div>
-<div class="blog">
-    <h1>
-        {{ page.title }}
-    </h1>
-    <p>
-        {{ content }}
-    </p>
-</div>
+
+{{ content }}
 

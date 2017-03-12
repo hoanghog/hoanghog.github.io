@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         {% include root.html %}
-        <title>Martin Hoang</title>
+        <title>{{ page.webname }}</title>
         <link href="{{ root }}/css/common.css" rel="stylesheet">
         <link href="{{ root }}/css/sidebar.css" rel="stylesheet">
         <link href="{{ root }}/css/post.css" rel="stylesheet">
@@ -13,13 +13,7 @@
         <header >
             {% include nav.html %}
         </header>
-
-
-        {% if page.url == '/' %}
-            {% include main-screen.html %}
-        {% endif %}
-       
-
+        
         {{content}}
 
     </body>

@@ -1,0 +1,120 @@
+---
+layout: post
+---
+
+<h1>
+    Zadanie 1
+</h1>
+
+<p>
+    Hned na zaciatok by som chcel uviest ze nepouzivam slovensku diakritiku, nakolko mam problem s utf-8 aj ked som si ju definoval v config.yml a aj v html. S jekyllom som mal viacero problemov, jeden problem som zdokumentoval screenshotmi, postnem ich na koniec tejto podstranky.
+</p>
+
+<h2>
+    Podstranky
+</h2>
+
+<ul class="clear">
+    <li>Home: zakladna stranka</li>
+    <li>Blog: Zobrazenie napisanych blogov</li>
+    <li>About me: Napisane strucne o mne</li>
+    <li>Web pub: Podstranka spravena pre web pub</li>
+    <li>Blog-Post: Urcity blog</li>
+    <li>Hobbies: Zobrazenie niektorych mojich hobby (dostanete sa tam iba cez About me)</li>
+    <li>ZadanieX: Podstranka so zadanim</li>
+</ul>
+
+<h2>
+    Layout-y
+</h2>
+
+<ul class="clear">
+    <li>default: Vyuziva sa napriklad pri Home, AboutMe</li>
+    <li>post: Vyuziva sa pri Blog, ked sa vypisuju jednotlive blogy</li>
+    <li>wabalaba: Vyuziva sa pri AboutMe, urcity post (nazov je vysvetleny na konci, problem s jekyll)</li>
+</ul>
+
+<h2>
+    Premenne
+</h2>
+
+<ul class="clear">
+    <li>config.yml: Pouzite premenne pri linkoch na sidebare</li>
+    <li>markdown: Napr Title a Meta na vypis nazvu a kusok z clanku</li>
+    <li>root: Ide o premennu ktora mi vzdy vrati cestu ku korenovemu adresaru</li>
+</ul>
+
+<h2>
+    Kolekcie a datove subory
+</h2>
+
+<ul class="clear">
+    <li>Kolekcie: Hobbies na vypisanie niektorych hobby</li>
+    <li>Datove subory: Vytvoril som si .json, ale nenasiel som pouzitie zmysuplne</li>
+</ul>
+
+<h2>
+    Filtre a tagy
+</h2>
+
+<ul class="clear">
+    <li>For</li>
+    <li>If</li>
+    <li>Include</li>
+    <li>date: '%B %d. %Y</li>
+    <li>split: '/'</li>
+</ul>
+
+<h2>
+    Pluginy
+</h2>
+
+<ul class="clear">
+    <li>Jemoji: Plugin na zobrazenie emoji, napr na blogu "So far my experience..."</li>
+</ul>
+
+<h2>
+    Problemy s Jekyll
+</h2>
+
+<p>
+    Toto je opis problemu ked som chcel pouzit nested layouts, ale jekyll sa rozhodol ze pre nejaky dovod nebude fungovat pre jeden subor, nerozumiem preco
+</p>
+
+<p>
+    Mal som 2 identicke subory, dal som si ich skontrolovat pre istotu na text-compare.com
+</p>
+
+<img src="{{ root }}/imgs/problems/1.png" class="post-image"/>
+
+<p>
+    Pri vytvoreni noveho layoutu s nazvom wabalaba (random nazov), mi layout fungoval
+</p>
+
+<img src="{{ root }}/imgs/problems/2.png" class="post-image"/>
+
+<p>
+    Funkcna stranka
+</p>
+
+<img src="{{ root }}/imgs/problems/3.png" class="post-image"/>
+
+<p>
+    Pri pouziti povodneho layoutu (oby dva su identicke), mi stranka nefungovala
+</p>
+
+<img src="{{ root }}/imgs/problems/4.png" class="post-image"/>
+
+<p>
+    Ziadnu chybu nevypisuje na konzole
+</p>
+
+<img src="{{ root }}/imgs/problems/5.png" class="post-image"/>
+
+<h2>
+    Zaver
+</h2>
+
+<p>
+    Praca na vlastnom webovom sidle ma bavila, robil som nieco co som si myslel ze ma zmysel vediet. Ale jekyll ako nastroj mi absolutne nevyhovuje pretoze som realne zazil situacie kde sa spraval ako sa mu chcelo, vid obrazky hore. Pripadov bolo viacej ale bol som velmi frustrovany, vytoceny a unaveny nato aby som kazdy pripad dokumentoval.
+</p>

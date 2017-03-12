@@ -1,7 +1,18 @@
+author: "Martin Hoang"
+facebook: "https://www.facebook.com/martin.hog"
+twitter: "https://twitter.com/HoangHog"
+github: "https://github.com/hoanghog"
+
+
 exclude: ['README.md'] 
 encoding: utf-8
-gems:
-  - jemoji
+
+collections:
+  hobbies:
+    output: true
 
 baseurl: 
+
+gems:
+  - jemoji
 
