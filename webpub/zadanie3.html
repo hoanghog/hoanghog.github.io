@@ -1,0 +1,92 @@
+---
+layout: post
+---
+
+<h1>
+    Zadanie 3
+</h1>
+
+<p>
+    Hned na zaciatok by som chcel uviest ze nepouzivam slovensku diakritiku, nakolko mam problem s utf-8 aj ked som si ju definoval v config.yml a aj v html. S jekyllom som mal viacero problemov.
+</p>
+
+<h2>
+    Graficke zobrazenie XSD
+</h2>
+
+<img src="{{ root }}/imgs/xsd.png" class="post-image" />
+
+<h2>
+    firstPage
+</h2>
+
+<p>
+    Jednoducha prva strana, obsahuje Nazov, podtitulok, a meno autora. Stranka firstPage sa moze v prezentacii nachadzat iba raz. 
+</p>
+
+<h2>
+    page
+</h2>
+
+<p>
+    Strana page sa rozdeluje na 4 rozdielne strany. Ide to cez choice, to znamena ze sa da zvolit iba jeden dizajn na stranu. Na kazdu page stranu sa pise nadpis do &ltheading1&gt a automaticky sa zobrazuje cislovanie stran.
+</p>
+
+<ul class="clear">
+    <li><b>basicText</b> - ide o stranu s beznym textom v prezentacii.</li>
+    <li><b>table</b> - ide o stranu s tabulkou. Tabulka moze mat 2 rozdielne bunky a to header a cell. Header je na zvyraznenie a cell je obycajna bunka.</li>
+    <li><b>list</b> - ide o text s odrazkami. Rozdeluje sa na 2 typy a to cislovany alebo jednoduche odrazky.</li>
+    <li><b>figure</b> - ide o stranku s obrazkom.</li>
+</ul>
+
+<h3>
+    basicText
+</h3>
+
+<p>
+    Ide o stranu s obycajnym textom. Pozna 3 druhy zvyraznenia a to <b>tucne</b>, <i>kurziva</i>, <u>podciarknutie</u>. Cely text sa uzatvara do &ltbasicText&gt. V tomto bloku sa dalej text pise do &ltparagraph&gt. Na vyuzitie zvyraznenie je potrebne pouzit &lthighlight&gt bloky a zmenit atribut type na <i>bold, italic,</i> alebo <i>underline</i>.
+</p>
+
+<h3>
+    table
+</h3>
+
+<p>
+    Strana table predstavuje obycajnu tabulku s popisom. Popis sa vklada do  &ltcaption&gt. Tabulky su v celej prezentacii pocitane a automaticky sa prideluje cislo. Pre vytvorenie zvyraznenej hlavicky tabulky je potrebne do bloku &ltheader&gt v pisat jednotlive bunky pomocou &ltcell&gt.
+</p>
+
+<p>
+    Na vytvorenie obycajneho riadku je potrebne do bloku &ltline&gt v pisovat jednotlive bunky pomocou &ltcell&gt.
+</p>
+
+<h3>
+    list
+</h3>
+
+<p>
+    Ide o stranku, kde je mozne pisat zoznamy. Podporuje 2 typy zoznamov a to cislovany a odrazkovy. Na vytvorenie je potrebne vytvorit blok &ltlist&gt, do ktoreho musime zmenit atribut option na <i>ordered</i> pre cislovany alebo <i>unordered</i> pre odrazkovy zoznam. Dalsi blok musi byt &ltitem&gt do ktoreho v pisujeme basicText, ktory som uz vyssie opisoval.
+</p>
+
+<h3>
+    figure
+</h3>
+
+<p>
+    Poslednym typom strany je strana s obrazkom. Ak chceme vlozit obrazok je potrebne do bloku &ltfigure&gt vpisat tri parametre. &ltsource&gt, &ltsize&gt kde source je zdroj obrazka a size je velkost. Size sa este rozdeluje na &ltwidth&gt a &ltheight&gt pre sirku a vysku obrazka. Tak isto ako pri tabulke do &ltcaption&gt vpisujeme popis k obrazku a kazdy obrazok je pocitany ako aj tabulky.
+</p>
+
+<h2>
+    Xml na html
+</h2>
+
+<p>
+    Na transformovanie xml na html som pouzil externy <a href="https://sourceforge.net/projects/saxon/files/latest/download?source=files">saxon</a>, nakolko mi ten v Dockbook vyhadzoval chyby. Stranu prezentacie sa prepinaju sipkami doprava a dolava.
+</p>
+
+<h2>
+    Xml na pdf
+</h2>
+
+<p>
+    Na transformovanie som pouzil saxon z Dockbooku ktory sme dostali.
+</p>
